@@ -57,7 +57,7 @@ for i in range(M):
         
         xt = []
         # initial circuit
-        # ["H", "D", "T", "G", "P", "C", "H"]
+        # ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"]
                 
         A1 = X0[ran_1]
         A2 = X0[ran_2]
