@@ -14,7 +14,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
 
-#The best possible solution for this problem is a tour length ??????
+#The best possible solution for this problem is a tour length 17
 
 Dist = pd.DataFrame([[0.0,1.0,2.0,4.0,9.0,8.0,3.0,2.0,1.0,5.0,7.0,1.0,2.0,9.0,3.0],
                      [1.0,0.0,5.0,3.0,7.0,2.0,5.0,1.0,3.0,4.0,6.0,6.0,6.0,1.0,9.0],
@@ -42,7 +42,7 @@ alpha = 0.9
 
 #initial solution to the TSP
 #Form an initial circuit guess
-X0 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"]
+X0 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O", "A"]
 
 Temp = []
 Min_Cost = []
@@ -57,7 +57,7 @@ for i in range(M):
         
         xt = []
         # initial circuit
-        # ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"]
+        # ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O", "A"]
                 
         A1 = X0[ran_1]
         A2 = X0[ran_2]
@@ -133,6 +133,6 @@ M  2.0  6.0  1.0  2.0  8.0  1.0  5.0  1.0  1.0  8.0  1.0  5.0  0.0  9.0  6.0
 N  9.0  1.0  3.0  1.0  2.0  2.0  1.0  7.0  6.0  5.0  8.0  4.0  9.0  0.0  7.0
 O  3.0  9.0  4.0  3.0  5.0  5.0  4.0  8.0  4.0  2.0  1.0  3.0  6.0  7.0  0.0
 Result of run:
-Final Solution: ['I' 'C' 'E' 'G' 'J' 'O' 'K' 'M' 'F' 'L' 'H' 'A' 'B' 'N' 'D']
-Minimized Cost: 18.0
+Final Solution: ['G' 'H' 'K' 'O' 'J' 'E' 'C' 'I' 'M' 'F' 'N' 'B' 'A' 'L' 'D' 'G']
+Minimized Cost: 19.0
 """
